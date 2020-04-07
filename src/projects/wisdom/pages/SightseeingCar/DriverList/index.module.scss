@@ -1,0 +1,422 @@
+@import '@/styles/theme.scss';
+.driverList {
+  width: 100%;
+  height: 100%;
+}
+
+.routeName {
+  padding-right: 5px;
+}
+
+.driver_empty {
+  composes: routeName;
+}
+
+.headPortrait {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.driverName {
+  padding-left: 10px;
+}
+.driver_button{
+  cursor: pointer;
+  color: $primary-color;
+}
+
+.driver_list_table {
+  padding: 0 20px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.adddriver {
+  padding: 15px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 司机详情 样式设置
+.driverDetailsData {
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  :global {
+    .ant-row {
+      display: flex;
+    }
+    // 头部布局设置
+    .ant-layout {
+      width: 100%;
+      background: #fff;
+    }
+  }
+  
+  .driverDetailsData_minInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 20px solid #f0f2f5;
+    background: #fff;
+
+    .driverDetailsData-identical_title {
+      height: 65px;
+      font-size: $t2;
+      border-bottom: 1px solid #f0f0f0;
+      line-height: 65px;
+      padding-left: 22px;
+      color: #000;
+    }
+
+  }
+}
+
+// 司机详情 头部 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.driverHeaderData{
+  width: 100%;
+  height: 200px;
+
+  // 图片上传 布局样式
+  .headPortrait {
+    display: flex;
+    justify-content: center;
+    background: none;
+   
+    div {
+      width: 120px;
+      height: 120px;
+      padding: 0;
+    }
+  }
+
+  .imgUrl {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+  }
+  
+  .imgStyle{
+    width: 120px;
+    height: 120px;
+    background: #ebebeb;
+    border-radius: 50%;
+  }
+
+  .headPortrait_top{
+    padding-top: 10px;
+  }
+
+  .driverDetailsData_carName {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  
+    div {
+      font-size: $t1;
+    }
+  }
+
+  .driverDetailsData_detailsInfo {
+    display: flex;
+    align-items: center;
+    font-size: $t3;
+    line-height: $t3-line-height;
+    padding-bottom: 22px;
+    p {
+      margin: 0;
+    }
+  }
+
+  .detailsInfo_sex {
+    padding-bottom: 22px;
+  }
+  
+  .detailsInfo_age {
+    padding-bottom: 22px;
+  }
+  
+  .detailsInfo_idNumber {
+    padding-bottom: 22px;
+  }
+  
+  
+  .operationFormItem_style {
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+
+  // 图片上传 样式
+  .fileSelect {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+  
+    img {
+      width: 120px;
+      border-radius: 50%;
+    }
+  }
+  
+  // 操作样式 设置
+  .operationFormItem {
+    display: flex;
+    background: none;
+  
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .operationItem {
+      padding-top: 10px;
+    }
+  }
+
+  .routeNames{
+    padding-right: 5px;
+  }
+
+  .deleteDevice{
+    margin-right: 16px;
+  }
+
+  .routeNameList{
+    width: 100%;
+  }
+}
+
+
+// 司机提成 模块 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.royalty {
+  width: 50%;
+  min-height: 830px;
+  border-left: 10px solid #f0f2f5;
+  box-sizing: border-box;
+
+  .title {
+    height: 65px;
+    font-size: $t2;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 65px;
+    padding-left: 22px;
+    color: #000;
+  }
+
+  // 日历组件样式
+  .monthPicker_1 {
+    margin-left: 18px;
+    margin-top: 20px;
+
+    input {
+      width: 280px;
+    }
+  }
+
+  .stateBox {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  
+    .state {
+      width: 100%;
+
+      .difference {
+        width: 100%;
+        height: 86px;
+        display: flex;
+        padding-left: 20px;
+      }
+    }
+  
+    .identical_style {
+      width: 178px;
+      height: 86px;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      margin-right: 20px;
+  
+      p {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        padding-top: 12px;
+        padding-bottom: 10px;
+      }
+  
+      div {
+        width: 100%;
+        height: 30px;
+        font-size: 30px;
+        margin: 0;
+        display: flex;
+  
+        span {
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+    }  
+  }
+   
+  .identicalBox_style {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    p {
+      margin: 0;
+      padding: 0;
+      color: $success-color;
+      font-size: 22px;
+      line-height: 27px;
+      padding-bottom: 20px;
+    }
+
+    div {
+      height: 35px;
+      display: flex;
+      align-items: flex-end;
+
+      div {
+        height: 35px;
+        font-size: 35px;
+        line-height: 35px;
+        padding-right: 5px;
+        color: #656565;
+
+        span {
+          height: 35px;
+          font-size: 35px;
+          line-height: 35px;
+        }
+      }
+
+      span {
+        height: 22px;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .unliquidated {
+    color: #ff2626;
+  }
+
+  .settled {
+    color: black;
+  }
+
+
+  .money {
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 16px;
+    color: #000;
+
+    p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    div {
+      font-size: 32px;
+      height: 32px;
+      line-height: 32px;
+      padding-left: 10px;
+    }
+  }
+
+  .form {
+    width: 95%;
+    // padding: 0px 18px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 0px #888888, 
+                3px 1px 2px #888888,
+                0px 3px 8px #888888, 
+                -1px 0px 1px #888888;
+
+    .formTitle {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      font-size: $t2;
+      padding: 5px 0;
+
+      .monthPicker_2 {
+        margin-left: 18px;
+
+        input {
+          width: 120px;
+          // height:45px;
+        }
+      }
+
+      .driverDetailsData_formTitle_tic {
+        display: flex;
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .formTitle_left{
+    padding-right: 50px;
+  }
+  .dayUnliquidated_color{
+    color: #ff2626;
+  }
+}
+
+.monthlyOrders {
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  padding: 10px 0;
+  padding-left: 20px;
+}
+
+// 上下班记录模块 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.commuteRecord {
+  width: 50%;
+  min-height: 830px;
+  border-right: 10px solid #f0f2f5;
+  box-sizing: border-box;
+
+  .content {
+    height: 800px;
+    padding-top: 34px;
+    padding-left: 14px;
+    overflow: auto;
+
+    span {
+      padding-right: 30px;
+    }
+  }
+}
+.title {
+  height: 65px;
+  font-size: $t2;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 65px;
+  padding-left: 22px;
+  color: #000;
+}

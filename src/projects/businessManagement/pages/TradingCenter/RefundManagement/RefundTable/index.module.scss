@@ -1,0 +1,172 @@
+@import '@/styles/theme.scss';
+
+// 表格样式
+.refund-table {
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 24px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: #fafafa;
+  margin-bottom: 10px;
+  color: $subtitle;
+
+  .title-product {
+    width: 47%;
+    padding-left: 16px;
+  }
+
+  .title-price {
+    width: 10%;
+    text-align: center;
+  }
+
+  .title-refund-type {
+    width: 15%;
+    text-align: center;
+  }
+
+  .title-refund-amount {
+    width: 10%;
+    text-align: center;
+  }
+
+  .title-status {
+    width: 8%;
+    text-align: center;
+  }
+
+  .title-operate {
+    width: 10%;
+    text-align: right;
+    padding-right: 16px;
+  }
+}
+
+.about-price {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+  box-sizing: border-box;
+
+  .real-price {
+    color: $list-text;
+  }
+}
+
+.table-title {
+  font-size: $t4;
+  color: $list-text;
+}
+
+.product-list {
+  display: flex;
+  width: 100%;
+  padding: 16px 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ebebeb;
+
+  .product-img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.table {
+  margin-bottom: 10px;
+
+  :global {
+    .ant-table-thead {
+      display: none;
+    }
+
+    .ant-table.ant-table-bordered .ant-table-title {
+      background: #fafafa;
+      padding: 8px 16px;
+    }
+
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td {
+      padding: 0;
+      vertical-align: top;
+    }
+  }
+}
+
+.product-msg {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 100%;
+
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+
+    .name {
+      color: $primary-color;
+    }
+
+    .spec {
+      color: $list-text;
+    }
+  }
+}
+
+.operate {
+  padding: 16px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  color: $primary-color;
+
+  .confirm {
+    cursor: pointer;
+  }
+
+  .refuse {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
+
+.common {
+  padding: 16px 16px;
+  box-sizing: border-box;
+  color: $list-text;
+}
+
+// 分页样式
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+// 拒绝退款弹框样式
+.refuse-form {
+  :global {
+    .ant-form-item-required::before {
+      color: $primary-color
+    }
+  }
+}
+
+// 确认退款样式
+.refund-form {
+  :global {
+    .ant-form-item-required::before {
+      color: #fff;
+    }
+  }
+}

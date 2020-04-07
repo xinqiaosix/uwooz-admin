@@ -1,0 +1,269 @@
+@import '@/styles/theme.scss';
+
+.order-detail {
+  min-height: 800px;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.back{
+  margin-right: 15px;
+  color: $subtitle;
+  font-size: 14px;
+}
+
+.back:hover {
+  color: $primary-color;
+}
+
+.text {
+  color: $main-title;
+  font-size: $t3
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $list-text;
+  margin-top: 20px;
+
+  .order-msg {
+    width: 25%;
+  }
+}
+
+.order-step {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
+
+  .step {
+    padding: 0 35px;
+    box-sizing: border-box;
+
+    :global {
+      .ant-steps-item-title {
+        font-size: $t4
+      }
+    }
+  }
+}
+
+.order-operate {
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: $t4;
+
+  .order-operate-title {
+    color: $subtitle;
+  }
+
+  .order-detail-operate {
+    color: $primary-color;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+}
+
+.sell-note {
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: $subtitle;
+}
+
+.order-message {
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  // justify-content: space-between;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  // margin-right: 150px;
+  width: 33%;
+  font-size: $t4;
+
+  .common-title {
+    color: $main-title;
+    font-weight: bold;
+  }
+
+  .common {
+    color: $list-text;
+    display: flex;
+    margin-top: 10px;
+
+    .buyer-name {
+      color: $primary-color;
+    }
+
+    .address {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      color: $list-text;
+    }
+  }
+}
+
+
+// 商品表格样式
+.product-table {
+  margin-top: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  :global {
+    .ant-table-bordered .ant-table-body>table {
+      border-right: 1px solid #e8e8e8;
+    }
+
+    .ant-table-bordered .ant-table-thead>tr>th,
+    .ant-table-bordered .ant-table-tbody>tr>td {
+      border-right: none;
+    }
+
+    .ant-table-bordered .ant-table-thead>tr>th {
+      border-bottom: none;
+    }
+
+    .ant-table-tbody>tr>td {
+      vertical-align: top;
+      color: $subtitle
+    }
+
+  }
+}
+
+.product {
+  display: flex;
+}
+
+.product-img {
+  height: 50px;
+  width: 50px;
+}
+
+.product-name {
+  color: $primary-color;
+  margin-left: 10px;
+}
+
+
+// 商品价格样式
+
+.product-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 30px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.product-price-common {
+  display: flex;
+  align-items: center;
+  color: $list-text;
+  justify-content: flex-end;
+}
+
+.product-price-title {
+  width: 170px;
+  text-align: right;
+}
+
+.product-price-value {
+  width: 100px;
+  text-align: right;
+}
+
+.order-price {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.order-price-title {
+  color: $main-title;
+  font-weight: bold;
+  width: 170px;
+}
+
+.order-price-value {
+  color: #f5222d;
+  width: 100px;
+  text-align: right;
+  font-size: $t3;
+  font-weight: bold;
+}
+
+
+// 修改价格弹框样式
+.payment-form {
+  :global {
+
+    .ant-form-item {
+      color: $list-text;
+    }
+
+    .ant-form-item-label>label {
+      color: $list-text;
+    }
+    
+  }
+}
+
+.sumbit-or-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .explain {
+    color: $info-text;
+    margin-left: 10px;
+  }
+}
+
+
+// 发货弹框样式
+.address {
+  display: flex;
+  flex-direction: column;
+  color: $subtitle;
+  font-size: $t4;
+}
+
+.select-option{
+  border-bottom: 1px solid #e8e8e8;
+
+  .address {
+    padding-bottom: 10px;
+  }
+}

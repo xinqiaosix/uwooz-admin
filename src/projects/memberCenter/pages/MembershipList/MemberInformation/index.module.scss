@@ -1,0 +1,111 @@
+@import '@/styles/theme.scss';
+
+.head {
+  // height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // padding: 0 31px;
+  // box-sizing: border-box;
+  // border-bottom: 1px solid #e9e9e9;
+}
+
+.bigtitle {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: $t3;
+  color: $main-title;
+  margin-right: 15px;
+}
+
+.edit {
+  font-size: $t4;
+  color: $primary-color
+}
+
+.cancel {
+  height: 13px;
+  width: 10px;
+}
+
+.user_info {
+  display: flex;
+  padding-bottom: 34px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  background: #e9e9e9;
+  margin-right: 28px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.username {
+  font-size: $t4;
+  line-height: $t4-line-height;
+  color: $list-text;
+}
+
+.aboutuser {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.user_infolist {
+  display: flex;
+  border-bottom: 1px solid #ededed;
+
+}
+
+.userkey {
+  font-size: $t4;
+  color: $subtitle;
+  display: flex;
+  margin-bottom: 31px;
+
+  .uservalue {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: $t4;
+    color: $list-text;
+  }
+}
+
+.list_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.list_left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.user_integral {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 27px;
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+}
+
+.labellist {
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+
+  .tag {
+    color: $list-text
+  }
+}

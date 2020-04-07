@@ -1,0 +1,33 @@
+@import '@/styles/theme.scss';
+
+.title {
+  font-size: $t3;
+  color: $subtitle;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+  height: 65px;
+  padding-left: 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  .back {
+    height: 15px;
+    width: 15px;
+    margin-right: 15px;
+  }
+}
+
+.stepone {
+  width: 620px;
+  align-self: center;
+  margin-top: 40px;
+
+  .selectsites {
+    display: flex;
+  }
+
+  .btn {
+    margin-left: 140px;
+  }
+}

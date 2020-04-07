@@ -1,0 +1,23 @@
+.addComponentsFormBox{
+
+  .ant-form-item {
+    // 设置文本内容的样式
+    display: flex;
+    align-items: center;
+
+    .ant-form-item-label {
+      // 设置 label 标题的样式
+      text-align: right;
+      padding-right: 10px;
+      padding-bottom: 0;
+    }
+  }
+
+  #entryDate {
+    width: 100%;
+  }
+
+  #birthday {
+    width: 100%;
+  }
+}

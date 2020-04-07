@@ -1,0 +1,11 @@
+.customizedForm-form {
+  width: 60%;
+  margin-top: 50px;
+
+  :global {
+    .ant-row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

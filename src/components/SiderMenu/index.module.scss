@@ -1,0 +1,28 @@
+@import "@/styles/variables.scss";
+
+.root {
+  width: $sider-menu-width;
+}
+
+.title {
+  border-top: 1px solid #F0F2F5;
+  border-bottom: 1px solid #F0F2F5;
+  padding-left: 40px;
+  height: 56px;
+  font-size: 18px;
+  line-height: 56px;
+  color: $sub-title;
+}
+:global {
+  .ant-menu-inline {
+    border-right: none;
+  }
+  .ant-menu-inline .ant-menu-item::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-left: 3px solid $theme;
+  }
+}

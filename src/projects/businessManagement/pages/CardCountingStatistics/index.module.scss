@@ -1,0 +1,85 @@
+@import '@/styles/theme.scss';
+
+.cardTicketBox{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.cardTicket {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px solid #EDEDED;
+  font-size: $t3;
+  line-height: $t3-line-height;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+
+  .allBusiness{
+    margin-left: 50px;
+  }
+}
+
+.search {
+  width: 100%;
+  height: 80px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .searchName {
+    width: 30%;
+  }
+}
+
+.searchData {
+  display: flex;
+  align-items: center;
+  :global {
+    .ant-form-item{
+      margin: 0;
+    }
+  }
+
+  .cardTicketType {
+    width: 230px;
+    display: flex;
+  }
+
+  .driverQueryTime {
+    width: 250px;
+  }
+
+  .cardTickData {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  .search_business {
+    width: 120px;
+  }
+  .empty {
+    padding: 0;
+  }
+}
+
+.caredData {
+  width: 100%;
+  padding: 0 22px;
+}
+.operateStyle {
+  padding-right: 10px;
+  color: #ff9212;
+  cursor: pointer;
+}
+
+.cardColor {
+  color: #ff9212; 
+}

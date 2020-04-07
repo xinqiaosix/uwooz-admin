@@ -1,0 +1,37 @@
+@import '@/styles/theme.scss';
+
+.main {
+    background-color: $primary-color;
+    color: $white;
+    &:hover {
+        background-color: #ffa841;
+        color: $white;
+    }
+}
+.secondary {
+    background-color: #fff;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    &:hover {
+        background-color: $primary-color;
+        color: $white;
+    }
+}
+.cancel {
+    background-color: $white;
+    color: $info-text;
+    border: 1px solid $info-text;
+    &:hover {
+        background-color: $primary-color;
+        color: $primary-color;
+    }
+}
+.delete {
+    background-color: $white;
+    color: $error-color;
+    border: 1px solid $error-color;
+    &:hover {
+        background-color: $error-color;
+    }
+}
+

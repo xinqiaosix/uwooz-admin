@@ -1,0 +1,181 @@
+@import '@/styles/theme.scss';
+
+.header {
+  height: 64px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.title {
+  font-size: $t2;
+  color: $main-title;
+  font-weight: bold;
+}
+
+.content {
+  min-height: 560px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.label_content {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 25%;
+}
+
+.label_header {
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 47px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.label_title {
+  font-size: $t4;
+  color: $subtitle;
+}
+
+.label_icon {
+  color: $primary-color
+}
+
+.label_list {
+  padding: 17px 0 0 15px;
+  box-sizing: border-box;
+
+  :global {
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+      margin-left: 0;
+    }
+  }
+}
+
+.smalltitle {
+  font-size: $t4;
+  color: $primary-color;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  font-size: $t4;
+  color: $subtitle;
+  line-height: 2.7;
+  margin-top: 15px;
+}
+
+.list {
+  margin-left: 20px;
+  background: #fff;
+  padding: 28px 20px 0 20px;
+  box-sizing: border-box;
+  width: 75%;
+  position: relative;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  :global {
+    .ant-input-search-icon {
+      color: rgba(0, 0, 0, .5)
+    }
+  }
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ordercondition {
+  color: #7b7b7b;
+  margin-right: 5px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  color: #d9d9d9;
+}
+
+.sort:hover .filter {
+  color: $primary-color;
+}
+
+.sort:hover .ordercondition {
+  color: $primary-color
+}
+
+.membershiptable {
+  margin-top: 25px;
+}
+
+.alwayslabel {
+  position: absolute;
+  top: 96px;
+  left: 140px;
+  z-index: 9;
+  color: #8c8c8c
+}
+
+.alwayslabel:hover {
+  color: $primary-color;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  height: 35px;
+  width: 35px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.user_name:hover {
+  color: $primary-color;
+  cursor: pointer;
+}
+
+.optionlist {
+  .edit {
+    color: $info-color;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .labeling {
+    color: $info-color;
+    cursor: pointer;
+  }
+}
+
+.addlabel{
+  display: flex;
+  flex-direction: column;
+  .btn{
+    align-self: flex-end;
+    margin-top: 20px;
+  }
+}

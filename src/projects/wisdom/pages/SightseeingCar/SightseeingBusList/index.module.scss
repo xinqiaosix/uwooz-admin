@@ -1,0 +1,440 @@
+@import "@/styles/theme.scss";
+
+.SightseeingCarList {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+
+  //操作设置
+  .driverManagement_operation {
+    display: flex;
+    align-items: center;
+
+    .driver_empty {
+      display: block;
+      width: 1px;
+      height: 10px;
+      background: #ccc;
+      margin: 0px 10px;
+    }
+  }
+
+  .SightseeingCarList_tab {
+    background: #fff;
+    position: relative;
+
+    .ant-tabs {
+      overflow: unset;
+    }
+  }
+
+  .ant-tabs-tabpane {
+    padding: 0 12px;
+    padding-top: 20px;
+    background: #fff;
+  }
+
+  // 去掉antd的Input组件获取焦点时的蓝色边框
+  .ant-calendar-picker-input input:focus {
+    border: none;
+    border-bottom: 1px solid white !important;
+    box-shadow: none;
+  }
+
+  .ant-tabs-nav-scroll {
+    height: 60px;
+  }
+
+  .ant-tabs-nav {
+    height: 60px;
+    padding-top: 5px;
+  }
+}
+
+// 观光车详情组件 样式设置
+.SightseeingCarDetails {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: 11;
+}
+
+.sightseeingName {
+  color: $info-color;
+}
+
+// 更多操作 设置
+.sightseeingCar_menuStyle {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  position: relative;
+  left: -16px;
+  margin-top: 10px;
+
+  // 设 class 改动无效 li 有效
+  li {
+    padding: 0;
+  }
+}
+
+/* css 箭头朝上的小三角 => 在上右下左 四个小三角中 最下面的三角 箭头是朝上*/
+#sanjiao_top {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0; /*是因为, 虽然宽高度为0, 但在IE6下会具有默认的 */
+  line-height: 0; /* 字体大小和行高, 导致盒子呈现被撑开的长矩形 */
+  border-width: 12px;
+  border-style: dashed dashed solid dashed; /* 上右下左 四个小三角，根据需要选择三角形的方向，比如选向上箭头，其他右、下、左设置为透明 IE6下, 设置余下三条边的border-style为dashed,即可达到透明的效果*/
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  top: -24px;
+  left: 20px;
+}
+
+.bus_dropdown{
+  cursor: pointer;
+  color: $primary-color;
+}
+
+.addbus{
+  padding: 15px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+}
+
+.bus_list_table{
+  padding: 0 20px; 
+  box-sizing: border-box;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 观光车详情组件样式
+.sightseeingCarDetails {
+  width: 100%;
+  min-height: 1000px;
+  :global {
+    // 头部布局设置
+    .ant-layout {
+      width: 100%;
+      background: #fff;
+    }
+
+    .ant-row {
+      display: flex;
+    }
+
+    .sightseeingCarDetails_identical_name {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .sightseeingCarDetails_Box {
+    width: 100%;
+    height: 810px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 20px solid #f0f2f5;
+    background: #fff;
+
+    .sightseeingCarDetails-royalty_stateBox {
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px;
+
+      .sightseeingCarDetails-royalty_state {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+
+        .sightseeingCarDetails-royalty_unliquidated {
+          h4 {
+            color: #ff2626;
+          }
+        }
+
+        .sightseeingCarDetails-royalty_Settled {
+          h4 {
+            color: black;
+          }
+        }
+      }
+
+      .identical_style {
+        width: 40%;
+        height: 70px;
+
+        div {
+          font-size: 16px;
+        }
+
+        h4 {
+          font-size: 35px;
+          margin: 0;
+        }
+      }
+
+      .sightseeingCarDetails-royalty_total {
+        padding-left: 20px;
+      }
+    }
+
+    .monthlyOrders {
+      width: 100%;
+      height: auto;
+      font-size: 20px;
+      font-weight: 500;
+      color: black;
+      padding: 10px 0;
+      padding-left: 20px;
+    }
+  }
+}
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 观光车详情组件 => 头部信息设置
+.sightseeingCarDetails_bx {
+  height: 190px;
+  background: #fff;
+
+  // 图标
+  .operationFormImg {
+    width: 100%;
+    height: 100%;
+    background: none;
+
+    div {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sightseeingCarDetails_imgUrl {
+      width: 50px;
+      height: 100%;
+      display: flex;
+      padding-left: 16px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  // 操作样式 设置
+  .operationFormItem {
+    display: flex;
+    background: #fff;
+
+    div {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .operationItem {
+      padding-top: 20px;
+      display: flex;
+      button {
+        margin-right: 12px;
+      }
+
+      // justify-content: space-evenly;
+    }
+  }
+
+  .sightseeingCarDetails_header_t1 {
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    .sightseeingCarDetails_head1 {
+      div {
+        height: 40px;
+        line-height: 40px;
+        font-size: 24px;
+        color: black;
+      }
+    }
+
+    .sightseeingCarDetails_head2 {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #262626;
+      // padding-bottom:30px;
+
+      p {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      span {
+        font-size: 20px;
+        color: black;
+      }
+    }
+  }
+
+  .sightseeingCarDetails_header_t2 {
+    height: 40px;
+    margin-bottom: 8px;
+
+    .sightseeingCarDetails_header_b1 {
+      input {
+        width: 180px;
+      }
+    }
+
+    .sightseeingCarDetails_detailsInfo {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #262626;
+      // padding-bottom:30px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.sightseeingCarDetails_header {
+  background: #fff;
+}
+.operationFormItem_style {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+
+// 公用的标题样式
+.sightseeingCarDetails_identical_title {
+  height: 65px;
+  font-size: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 65px;
+  padding-left: 22px;
+  color: #000;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 观光车 => 上下班记录模块 
+.sightseeingCarDetails_commuteRecord {
+  width: 50%;
+  height: 100%;
+  border-right: 10px solid #f0f2f5;
+  box-sizing: border-box;
+
+  .sightseeingCarDetails_goToWorkBox {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+
+    .sightseeingCarDetails_identical_query {
+      width: 100%;
+      // height: 46px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .sightseeingCarDetails_identical_name {
+        width: 100%;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.searchQueryBox {
+  display: flex;
+  align-items: center;
+
+  .driverNameBox {
+    padding-right: 15px;
+    display: flex;
+  }
+
+  .driverQueryTime {
+    width: 260px;
+  }
+
+  .driverQueryOperation {
+    padding-left: 20px;
+  }
+}
+
+.driverQueryOperation_queryStyle {
+  margin-right: 5px;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 观光车详情 => 报修与维修记录
+.sightseeingCarDetails_repair {
+  width: 50%;
+  height: 100%;
+  border-left: 10px solid #f0f2f5;
+  box-sizing: border-box;
+
+  .sightseeingCarDetails_repair_content {
+    height: 725px;
+    padding-left: 22px;
+    padding-top: 20px;
+    overflow: auto;
+
+    span {
+      padding-right: 30px;
+      font-size: 16px;
+      color: black;
+    }
+  }
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 添加观光车样式
+.formBox {
+  
+  :global {
+    .ant-form-item {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+  
+      .ant-form-item-label {
+        text-align: right;
+        padding-right: 10px;
+        padding-bottom: 0;
+      }
+  
+      #inputTime {
+        width: 100%;
+      }
+  
+      #maintenanceTime {
+        width: 100%;
+      }
+  
+      #insuranceTime {
+        width: 100%;
+      }
+    }
+  }
+}

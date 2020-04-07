@@ -1,0 +1,133 @@
+@import '@/styles/theme.scss';
+
+.logisticsBox {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+
+}
+
+.background {
+  background: #fff;
+}
+
+.title {
+  font-size: $t2;
+  line-height: $t2-line-height;
+  color: $main-title;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.secondTitle {
+  font-size: $t3;
+  line-height: $t3-line-height;
+  color: $subtitle;
+}
+
+.addressLibrary {
+  padding: 20px;
+
+}
+
+.addStyle {
+  display: flex;
+  justify-content: flex-end;
+}
+.logisticsTable {
+  padding: 20px;
+}
+.operateStyle {
+  cursor: pointer;
+  color: $primary-color;
+  padding-right: 5px;
+}
+
+.mouldStyles {
+  cursor: pointer;
+  color: $primary-color;
+}
+
+.mouldStyles:nth-of-type(1) {
+  padding-right: 10px;
+}
+
+
+.addresStyle {
+
+  :global {
+
+    #merchantId {
+      width: 50%;
+    }
+
+    #theContact {
+      width: 50%;
+    }
+    
+    #contact {
+      width: 80%;
+    }
+
+    #contactAddress {
+      width: 80%;
+    }
+
+    .ant-cascader-picker-arrow {
+      right: 100px;
+    }
+
+    .ant-cascader-picker-clear {
+      right: 100px;
+    }
+
+    .ant-checkbox-wrapper {
+      margin-top: 10px;
+    }
+
+  }
+
+  .formItems {
+    margin-bottom:0 
+  }
+}
+
+.addressType {
+  width: 100%;
+}
+.addressType_default {
+  padding-left: 30px;
+}
+.merchantName {
+  color: rgba(0, 0, 0, 0.3);;
+}
+
+// 运费模板 样式 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.freightTemplate {
+  width: 100%;
+
+  :global {
+
+    .ant-collapse-content > .ant-collapse-content-box {
+      padding: 0;
+    }
+  }
+
+}
+.freightModule { 
+  padding: 20px;
+  background: #fff;
+}
+.moduleStyle {
+  display: flex;
+  justify-content: flex-end;
+}
+.moduleContent {
+  background: #fff;
+  margin:0 20px;
+}
+
+.newFreight {
+  color:#fff;
+}

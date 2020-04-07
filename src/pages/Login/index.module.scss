@@ -1,0 +1,162 @@
+@import '@/styles/theme.scss';
+
+// 页面主体
+.main {
+  display: flex;
+  min-height: 100%;
+}
+// 左侧大的logo
+.logo {
+  min-height: 100%;
+  width: 50%;
+  background: $primary-color url('../../assets/images/login/logo.jpg') center/cover no-repeat;
+}
+// 右侧登录表单
+.login-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  min-height: 830px;
+  overflow: auto;
+}
+// 右上角首页链接
+.go-home {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 14px;
+  .link {
+    color: $subtitle;
+  }
+}
+// 表单整体
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+
+  > .title {
+    font-size: 30px;
+    margin-top: 38px;
+  }
+  // 优先级不够所以放在里面
+  .login-form {
+    :global {
+      .ant-input {
+        font-size: 16px;
+        padding-left: 60px;
+        color: rgba(0, 0, 0, .45);
+      }
+    }
+  }
+}
+// 公司logo
+.company-logo {
+  width: 62px;
+  height: 62px;
+
+  .company-logo_img {
+    width: 100%;
+    height: 100%;
+  }
+}
+// 表单部分
+.login-form {
+  width: 100%;
+  margin: 45px 0 32px;
+
+  .form-input {
+    height: 46px;
+  }
+
+  .forgot-password {
+    float: right;
+  }
+
+  .auto-login {
+    font-size: 16px;
+  }
+
+  .login-button {
+    width: 100%;
+    height: 46px;
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  // 覆盖的样式
+  :global {
+    // 表单项
+    .ant-input-prefix {
+      left: 25px;
+    }
+
+    .ant-form-item {
+      font-size: 14px;
+    }
+
+    .ant-form-item-control {
+      line-height: 1;
+    }
+    // 多选框
+    .ant-checkbox-wrapper {
+      font-size: 14px;
+    }
+
+    .ant-checkbox-input {
+      width: 16px;
+      height: 16px;
+    }
+
+    .ant-checkbox-inner {
+      width: 16px;
+      height: 16px;
+
+      &:after {
+        left: 28%;
+      }
+    }
+
+    .ant-checkbox + span {
+      padding-left: 10px;
+    }
+  }
+}
+// 其它登录方式
+.other-login-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    color: #d9d9d9;
+    .text {
+      color: rgba(1, 1, 1, .65);
+      margin: 0 24px;
+    }
+  }
+
+  .weixin {
+    width: 120px;
+    height: 30px;
+    margin-top: 38px;
+    background: #fff url(../../assets/images/login/weixin.png) center/contain no-repeat;
+  }
+}
+// 其它方式
+.other-situations {
+  width: 252px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  .no-account {
+    color: rgba(1, 1, 1, .65);
+    // margin-right: 71px;
+  }
+  // .link {
+  //   margin-right: 25px;
+  // }
+}

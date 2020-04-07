@@ -1,0 +1,186 @@
+@import '@/styles/theme.scss';
+
+// 表格样式
+.order-table {
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 24px;
+}
+
+.title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: #fafafa;
+  margin-bottom: 10px;
+  color: $subtitle;
+
+  .title-product{
+    width:47%;
+    padding-left: 16px;
+  }
+  .title-price{
+    width: 10%;
+    text-align: center;
+  }
+
+  .title-buyer{
+    width: 15%;
+    text-align: center;
+  }
+
+  .title-delivery{
+    width: 10%;
+    text-align: center;
+  }
+
+  .title-status{
+    width: 8%;
+    text-align: center;
+  }
+
+  .title-operate{
+    width: 10%;
+    text-align: right;
+    padding-right: 16px;
+  }
+}
+
+.about-price {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+  box-sizing: border-box;
+
+  .real-price{
+    color: $list-text;
+  }
+  .freight-price {
+    color: $info-text;
+    margin-top: 10px;
+  }
+
+  .discount-price {
+    color: $primary-color;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
+
+.order_table {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.table-title {
+  font-size: $t4;
+  color: $list-text;
+}
+
+.product-list {
+  display: flex;
+  width: 100%;
+  padding: 16px 16px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ebebeb;
+
+  .product-img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.table {
+  margin-bottom: 10px;
+
+  :global {
+    .ant-table-thead {
+      display: none;
+    }
+
+    .ant-table.ant-table-bordered .ant-table-title {
+      background: #fafafa;
+      padding: 8px 16px;
+    }
+
+    .ant-table-thead>tr>th,
+    .ant-table-tbody>tr>td {
+      padding: 0;
+      vertical-align: top;
+    }
+  }
+}
+
+.product-msg {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 100%;
+
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+
+    .name {
+      color: $primary-color;
+    }
+
+    .spec {
+      color: $list-text;
+    }
+  }
+}
+
+.buyer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+  box-sizing: border-box;
+
+  .username {
+    color: $primary-color;
+  }
+
+  .phone {
+    color: $list-text;
+    margin-top: 10px;
+  }
+}
+
+.operate {
+  padding: 16px 16px;
+  box-sizing: border-box;
+
+  .comment {
+    color: $primary-color;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+}
+
+.common {
+  padding: 16px 16px;
+  box-sizing: border-box;
+  color: $list-text ;
+}
+
+.coupon{
+  color: $info-text;
+  display: flex;
+  flex-direction: column;
+}
+
+
+// 分页样式
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding-bottom: 40px;
+}

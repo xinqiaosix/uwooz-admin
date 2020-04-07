@@ -1,0 +1,27 @@
+@import '@/styles/theme.scss';
+
+.commodity {
+  padding: 20px;
+  background-color: #fff;
+  &-main {
+    margin-top: 20px;
+    :global {
+      .ant-tabs-bar {
+        margin-bottom: 0;
+      }
+    }
+    .imgWrap {
+      margin-right: 10px
+    }
+  }
+  .link {
+    cursor: pointer;
+    color: $primary-color;
+  }
+  &-hr {
+    width: 100%;
+    margin: 30px;
+    color: $dividing-line;
+  }
+}
+

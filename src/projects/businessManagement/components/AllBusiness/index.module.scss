@@ -1,0 +1,10 @@
+.search_business {
+  min-width: 120px;
+  // width: 150px;
+
+  :global {
+    .ant-select-selection {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '@/styles/theme.scss';
+
+.route_introduce {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 300px;
+}
+
+.station_list {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 400px;
+}
+
+.option{
+	color: $primary-color;
+	cursor: pointer;
+}
+
+.line_list_table{
+	background: #fff;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.addline{
+	padding: 15px 20px;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "proA/*": ["./projects/proA/*"],
+      "businessManagement/*": ["./projects/businessManagement/*"],
+      "enterpriseAccounts/*": ["./projects/enterpriseAccounts/*"],
+      "memberCenter/*": ["./projects/memberCenter/*"],
+      "wisdom/*": ["./projects/wisdom/*"]
+    }
+  }
+}

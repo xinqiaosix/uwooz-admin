@@ -1,0 +1,140 @@
+@import '@/styles/theme.scss';
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+// 标题公用样式
+.title {
+  font-size: $t3;
+  line-height: $t3-line-height;
+  padding-bottom: 24px;
+
+  span {
+    padding-right: 20px; 
+  }
+
+}
+
+// 内容公用样式
+.content {
+  width: 100%;
+  height: auto;
+
+  ul {
+    width: 100%;
+
+    li {
+      width: 100%;
+      display: flex;
+      font-size: $t4;
+      line-height: $t4-line-height;
+      padding-bottom: 18px;
+
+      span {
+        width: 20%;
+      }
+    }
+  }
+}
+
+#enterpriseInformation {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.enterpriseInformationBox {
+  width: 100%;
+  height: 100%;
+
+}
+.enterpriseInformation_info {
+  width: 100%;
+  height:36%;
+  background: #fff;
+  margin-bottom: 22px;
+  padding: 22px 26px;
+  padding-bottom: 0; 
+
+}
+.primaryAccountNumber {
+  width: 100%;
+  height: 28%;
+  background: #fff;
+  margin-bottom: 22px;
+  padding: 25px;
+  padding-bottom: 0; 
+
+}
+.wechatSettings {
+  width: 100%;
+  height: 31%;
+  background: #fff;
+  padding: 22px 26px;
+  padding-bottom: 0; 
+}
+
+.enterpriseInformation_title {
+  composes: title;
+}
+.primaryAccountNumber_title {
+  composes: title;
+}
+.wechatSettings_title {
+  composes: title;
+}
+.enterpriseInformation_content {
+  composes: content;
+}
+.primaryAccountNumber_content {
+  composes: content;
+
+  ul {
+
+    li {
+      padding-bottom:25px
+    }
+
+  }
+}
+.wechatSettings_content {
+  composes: content;
+}
+
+.enterpriseEditor {
+  cursor: pointer;
+  color: $primary-color;
+}
+
+// 企业信息 编辑 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#editorialEnterprise {
+
+}
+
+.formItem {
+  display: flex;
+  justify-content: center;
+}
+
+.editorialEnterprise_formItem {
+  composes: formItem;
+  
+  input{
+    width: 50%;
+  }
+}
+
+// 主账号 编辑 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.accountName {
+  font-size: $t4;
+  line-height: $t4-line-height;
+  padding-top: 10px;
+  
+  p{
+    color: $info-text;
+  }
+}
+
+

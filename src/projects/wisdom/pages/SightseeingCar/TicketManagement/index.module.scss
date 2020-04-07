@@ -1,0 +1,38 @@
+@import '@/styles/theme.scss';
+
+.expand_row_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #e8e8e8;
+  color: #000;
+  cursor: pointer;
+}
+
+.spec_name {
+	display: flex;
+	align-items: center;
+}
+
+.operation {
+  color: $primary-color;
+  .edit {
+    cursor: pointer;
+  }
+
+}
+
+.ticket_list_table{
+  background: #fff;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.addticket{
+	padding: 15px 20px;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+}

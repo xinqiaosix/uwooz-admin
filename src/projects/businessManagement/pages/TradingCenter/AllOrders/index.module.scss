@@ -1,0 +1,92 @@
+@import '@/styles/theme.scss';
+
+.allorder {
+  min-height: 800px;
+  background: #fff;
+}
+
+// 头部样式
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+
+  .head_title {
+    color: $main-title;
+    font-size: $t2;
+    font-weight: bold;
+    margin-right: 30px;
+  }
+}
+
+.search_business {
+  width: 100px;
+  margin-left: 36px;
+
+  :global {
+    .ant-select-selection {
+      border: none;
+    }
+
+  }
+}
+
+.alloption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid#ebebeb;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  :global {
+    .ant-tabs-bar {
+      // margin: 0 0 0 0;
+      border: none;
+      margin-bottom: 0;
+    }
+
+    .ant-tabs {
+      color: $list-text;
+    }
+  }
+
+  .export {
+    color: $primary-color;
+    font-size: $t4;
+    cursor: pointer;
+  }
+}
+
+
+// 搜索表单样式
+.search_form {
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 24px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 24px;
+}
+
+.form {
+  :global {
+    .ant-row {
+      display: flex
+    }
+  }
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-left: 66px;
+
+  .clear {
+    color: $primary-color;
+    font-size: $t4;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+}

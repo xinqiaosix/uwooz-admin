@@ -1,0 +1,64 @@
+@import '@/styles/theme.scss';
+
+.newFreight {
+  width: 100%;
+  height: 100%;
+  background:#fff;
+
+  :global {
+
+    .ant-page-header {
+      border-bottom: 1px solid #E9E9E9;
+    }
+    .ant-divider {
+      background: #fff;
+    }
+
+    #name {
+      width: 40%;
+    }
+
+  }
+}
+
+.formBox {
+  width: 100%;
+  height: 100%;
+
+}
+
+// .formItem {
+//   // display: flex;
+//   // justify-content: center;
+// }
+.formItemLayout {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.deliveryTable {
+  border: 1px solid #E9E9E9
+}
+
+.operateStyle {
+  cursor: pointer;
+  color: $primary-color;
+  padding-right: 5px;
+}
+
+.freightButtom {
+  margin-top: 20px;
+
+}
+.cancelStyle {
+  margin-left: 10px;
+}
+
+// .rowStyle {
+
+//   :global {
+//     // input {
+//     //   margin-left: 8px;
+//     // }
+//   }
+// }

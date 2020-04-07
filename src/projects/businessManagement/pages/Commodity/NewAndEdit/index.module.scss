@@ -1,0 +1,53 @@
+@import '@/styles/theme.scss';
+.newCommodity {
+  position: relative;
+  background-color: #fff;
+  min-height: 100%;
+  overflow: auto;
+
+  &-header {
+    padding: 20px;
+    border-bottom: 1px solid $dividing-line;
+
+    &__title {
+      display: inline-block;
+      color: $subtitle;
+      font-size: $t2;
+      line-height: $t2-line-height;
+      font-weight: 600;
+    }
+
+    &__btn {
+      float: right;
+    }
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
+    &__steps {
+      width: 60%;
+    }
+  }
+
+  &-operate {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    border-top: 1px solid $dividing-line;
+    background-color: #fff;
+    padding: 30px;
+    &_prev {
+      margin-left: 50px;
+      margin-right: 20px;
+    }
+    &_save {
+      margin-right: 10px;
+    }
+  }
+}

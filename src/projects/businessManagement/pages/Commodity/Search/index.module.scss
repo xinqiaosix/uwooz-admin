@@ -1,0 +1,15 @@
+@import '@/styles/theme.scss';
+
+.search {
+  margin: 20px 0;
+  &__btn-new {
+    margin-right: 20px;
+  }
+  &__text {
+    color: $info-text;
+  }
+  &__input-search {
+    float: right;
+    width: 300px;
+  }
+}

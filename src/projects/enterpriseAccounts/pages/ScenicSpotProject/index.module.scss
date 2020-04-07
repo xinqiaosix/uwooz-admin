@@ -1,0 +1,110 @@
+@import '@/styles/theme.scss';
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#scenicSpotProject {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.scenicSpotBox {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+
+  .table{
+    width: 100%;
+    padding: 0px 22px;
+  }
+}
+
+.scenicSpot_title {
+  width: 100%;
+  height: 52px;
+  border-bottom: 1px solid #EDEDED;
+  font-size: $t3;
+  line-height: $t3-line-height;
+  display: flex;
+  align-items: center;
+  padding-left: 22px;
+}
+
+.scenicSpot_operation{
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 22px;
+}
+.scenicSpotButton {
+  cursor: pointer;
+  color: $primary-color;
+}
+
+// 搜索设置
+.searchOperation {
+  display: flex;
+
+  input {
+    width: 150px;
+    margin-right: 10px;
+  }
+  button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search_business{
+    width: 150px;
+    margin-right: 10px;
+  }
+
+}
+
+// 气泡提示框
+.mobile_card{
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  font-size: 13px;
+
+  .hide{
+    width: 8px;
+    height: 8px;
+    margin-left: 20px;
+  }
+}
+
+.mobile_icon{
+  color: $primary-color;
+  margin-left: 10px;
+}
+
+// 弹出框样式设置
+.modalBox{
+
+  input {
+    margin-left:10px;
+  }
+
+  :global {
+
+    #personInCharge {
+      width: 50%;
+    }
+    
+    #identification {
+      width: 50%;
+    }
+
+    #identification {
+      padding-left: 10px;
+      color: $list-text;
+    }
+  }
+}
